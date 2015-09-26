@@ -1,0 +1,107 @@
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.hachathon.olx.MainActivity" >
+    <ScrollView 
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:paddingBottom="@dimen/activity_vertical_margin"
+    	android:paddingLeft="@dimen/activity_horizontal_margin"
+    	android:paddingRight="@dimen/activity_horizontal_margin"
+    	android:paddingTop="@dimen/activity_vertical_margin">
+    
+    	<LinearLayout 
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="vertical"
+        	>
+    		<EditText
+        		android:id="@+id/title"
+        		android:layout_width="match_parent"
+        		android:layout_height="60dp"
+        		android:hint="Title"
+        		android:layout_marginTop="5dp"
+        		android:layout_marginBottom="5dp"
+        		android:paddingLeft="3dp"
+        		android:textColor="#ffffff"
+        		android:background="@drawable/rounded_edittext" />
+    
+    		<EditText
+        		android:id="@+id/description"
+        		android:layout_width="match_parent"
+        		android:layout_height="60dp"
+        		android:hint="Add Description"
+        		android:paddingLeft="3dp"
+        		android:layout_marginTop="5dp"
+        		android:layout_marginBottom="5dp"
+        		android:textColor="#ffffff"
+        		android:background="@drawable/rounded_edittext"  />
+    		
+    		<ImageView 
+    		    android:id="@+id/image"
+    		    android:layout_width="300dp"
+    		    android:layout_height="400dp"
+    		    android:layout_marginTop="30dp"
+    		    android:layout_gravity="center_horizontal"
+    		    android:background="@drawable/nopic"
+    		    />
+    		<Button 
+    		    android:id="@+id/imageClick"
+    		    android:layout_width="200dp"
+    		    android:layout_height="60dp"
+    		    android:background="#002222"
+        	    android:textColor="#ffffff"
+        	    android:layout_marginTop="-50dp"
+    		    android:layout_gravity="center_horizontal"
+    		    android:text="Click to upload Image"
+    		    
+    		    />
+    		
+    		<Spinner
+        	android:id="@+id/location_spinner"
+        	android:layout_width="fill_parent"
+        	android:layout_height="100dp"
+        	android:prompt="@string/location"/>
+    		
+    		<EditText
+        		android:id="@+id/category"
+        		style="?android:attr/spinnerStyle"
+        		android:layout_width="match_parent"
+        		android:layout_height="100dp"
+        		android:hint="Category" />
+    		
+    		<EditText
+        		android:id="@+id/price"
+        		android:layout_width="match_parent"
+        		android:paddingLeft="3dp"
+        		android:layout_height="60dp"
+        		android:inputType="number"
+        		android:layout_marginTop="5dp"
+        		android:layout_marginBottom="5dp"
+        		android:background="@drawable/rounded_edittext" 
+        		android:hint="Price in Rs" />
+    		
+    		<Button 
+    		android:id="@+id/submit"
+        	android:layout_width="match_parent"
+        	android:layout_height="60dp"
+        	android:text="SUBMIT AD"
+        	android:background="#002222"
+        	android:textColor="#ffffff"
+        	/>
+    
+    	</LinearLayout>
+    
+    </ScrollView>
+    
+    
+
+</LinearLayout>
